@@ -1,0 +1,523 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+}
+/*------------------top----------------------*/
+.top-first {
+    background-color: #306587;
+    display: flex;
+}
+.top-first p {
+   color: #fff;
+}
+/*------------------navbar----------------------*/
+nav {
+    background-color: #FFC33E;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    height: 100%;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+.sidebar {
+    position: fixed;
+    top: 68px;
+    right: 0;
+    height: 100vh;
+    width: 100%;
+    background-image: url(./nav-background.png);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.sidebar a {
+    color: #fff;
+}
+.menu-button {
+    display: none;
+}
+.numbers a {
+    width: 140px;
+    background-color: #FFC33E;
+    color: #fff;
+}
+.cards-section {
+    display: flex;
+}
+.cards-back {
+    display: flex;
+}
+.sm-card {
+    display: flex;
+} 
+@media(max-width: 992px) {
+    .hideOnMobile {
+        display: none;
+    }
+    .menu-button {
+        display: block;
+    }
+    .numbers {
+        display: none;
+    }
+    .logo-desktop {
+        display: none;
+    }
+    .top-first {
+        display: none !important;
+    }
+}
+@media(max-width: 400px) {
+    .sidebar {
+        width: 100%;
+    }
+}
+@media (min-width: 992px) {
+    .showOnMobile {
+        display: none;
+    }
+
+    ul {
+        flex-direction: row-reverse !important;
+        align-items: center !important;
+    }
+    .logo-mobile {
+        display: none;
+    }
+    .logo a {
+        display: none;
+    }
+    nav {
+        background-color: #fff;
+        align-items: center !important;
+    }
+}
+
+/*-----------------search--------------------*/
+.input {
+    background-color: #306587;
+}
+.input-icons i {
+    position: absolute;
+    margin-left: 210px !important;
+}
+  
+.input-icons {
+    width: 100%;
+} 
+.input-field {
+    width: 100%;
+}
+input {
+    width: 250px !important;
+    height: 50px;
+    padding-left: 10px;
+    border: none;
+    outline: none;
+}
+input::placeholder {
+}
+form {
+    background-color: #FFC33E;
+    width: 300px;
+}
+.search {
+    width: 300px;
+    display: flex;
+}
+button {
+    background-color: #4C9EFF;
+    border: none;
+    color: #fff;
+}
+
+/*---------------partniors------------*/
+.partniors {
+    max-width: 100%;
+    background-color: #f0f0f0;
+}
+.partniors img {
+   width: 100px;
+}
+
+
+/*-------------------desktop search--------------*/
+.inline {
+    display: flex;
+}
+.desktop-version {
+    display: flex;
+    background-image: url(./desktopsearchimg.png);
+    width: 90%;
+    height: 660px;
+}
+.des-all-search {
+    display: flex;
+    width: 100%;
+}
+.search-container {
+    background-color: #fff;
+    width: fit-content;
+    height: fit-content;
+}
+.search-des {
+    background-color: #fff;
+    color: #000000;
+    box-shadow:
+    0 0 0 1px #FFC33E,
+    0 0 0 1px #FFC33E;
+}
+.search-container input {
+    box-shadow:
+    0 0 0 1px #FFC33E,
+    0 0 0 1px #FFC33E;
+}
+.main-desImg {
+    width: 100%;
+}
+.airplaneimg {
+    display: flex;
+    max-width: 470px;
+    margin-top: 400px;
+}
+.des-mainImg {
+    display: flex;
+}
+/*------------------desktop patniors------------*/
+.partniors {
+    display: flex;
+}
+.partniors-des {
+    display: flex;
+}
+.scrolling-wrapper {
+    width: 300px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+  
+   .card {
+      display: inline-block;
+    }
+  }
+  .scrolling-wrapper {
+    -webkit-overflow-scrolling: touch;
+  }
+  .scrolling-wrapper::-webkit-scrollbar {
+    width: 14px;               /* width of the entire scrollbar */
+  }
+
+  /*---------------sm-cards--------------------*/
+  .sm-card img {
+    width: 80px !important;
+  }
+  .sm-card p {
+    width: 100px !important;
+  }
+  .cards-back {
+    box-shadow:
+    0 0 0 1px #000000,
+    0 0 0 1px #000000;
+  }
+  .cards-sectiondesk {
+    display: flex;
+  }
+  .card-rowdesk {
+    background-color: #fff;
+  }
+
+  /*------------photos-----------------*/
+
+  .photos {
+    display: flex;
+    background-color: #306587
+    ;
+  }
+.photos-back img {
+    width: 150px !important;
+}
+
+
+.desk-ad {
+    display: flex;
+    width: 100%;
+  }
+  .desk-ad img {
+    width: 100%;
+  }
+
+  .offer-btn {
+    background-color: #FFC33E;
+  }
+
+
+
+  /*---------------carousel------------------*/
+
+  .carousel {
+    display: flex;
+    width: 800px;
+  }
+  .carousel1 {
+    display: flex;
+    width: 100% !important;
+  }
+
+
+
+  /*--------------services---------------*/
+  .services {
+    display: flex;
+    width: 100%;
+    background-color: #F3F3F3;
+  }
+  .services img {
+    width: 250px;
+  }
+  .service-cards {
+    display: flex;
+  }
+
+  /*---------------blog------------------*/
+  .blog {
+    display: flex;
+    width: 100% !important;
+  }
+  .blog-text {
+    width: 400px;
+  }
+  .all-blog {
+    width: 100%;
+  }
+ 
+
+
+  /*-------------three card-------------*/
+  .tree-card {
+    display: flex;
+    background-color: #F3F3F3;
+  }
+  .inner-3card {
+    background-color: #fff;
+  }
+
+
+  /*------------footer----------*/
+  .footer {
+    display: flex;
+    width: 100%;
+  }
+  .top-footer a {
+    color: #181433;
+    text-decoration: none;
+    padding-top: 10px;
+  }
+  .copy {
+    display: flex;
+    width: 100%;
+  }
+
+
+  /*-----------mobile design continue-----------*/
+
+  .smdes-card {
+    display: flex;
+    width: 100%;
+  }
+  .smdes-ex {
+    width: 320px;
+  }
+
+  /*-------------mobile services ---------------*/
+  
+  .mb-service {
+    display: flex;
+    background-color: #0A2640;
+  }
+  .allmb-services img {
+    margin-left: 20px !important;
+  }
+  .allmb-services p {
+    color: #fff;
+  }
+  .more-btn {
+    border-bottom: 1px solid #fff;
+  }
+
+  /*-------------time mobile------------*/
+
+  .time-container {
+    display: flex;
+  }
+
+
+
+  /*--------------blog mobile----------------*/
+  .mb-blog {
+    display: flex;
+    background-color: #0A2640;
+  }
+  .blogmb-card {
+    width: 301px;
+  }
+
+
+
+  /*-----------------carousel mobile------------*/
+
+  .desk-carousel {
+    display: flex;
+    width: 100%;
+  }
+  .desk-carouselbck {
+    width: 370px;
+  }
+
+
+  /*-----------------footer mobile--------------*/
+
+  .footer-mob {
+    display: flex;
+    width: 100%;
+    background-color: #FFC33E;
+  }
+  .footermob-bck a {
+    color: #000000;
+  }
+  .contact-links a {
+    background-color: #FFFFFF;
+    color: #000000;
+    text-decoration: none;
+    width: 100%;
+  }
+
+
+@media (min-width: 992px) {
+    .search {
+        display: none !important;
+    }
+    .inline {
+        display: none !important;
+    }
+    .input {
+        background-color: #fff;
+    }
+    .main-desImg {
+        width: 400px;
+    }
+    .partniors {
+        display: none !important;
+    }
+    .scrolling-wrapper {
+        width: 800px;
+    }
+    .cards-section {
+        display: none;
+    }
+    .photos {
+        display: none;
+    }
+    .sec-container {
+        display: none
+    }
+    .offer {
+        display: flex;
+    }
+    .offer-contex {
+        max-width: 300px;
+    }
+    .smdes-card {
+        display: none;
+    }
+    .mb-service {
+        display: none;
+    }
+    .time-container {
+        display: none;
+    }
+    .mb-blog {
+        display: none !important;
+    }
+    .desk-carousel {
+        display: none;
+    }
+    .footer-mob {
+        display: none;
+    }
+}
+@media (max-width: 992px) {
+    .desktop-version {
+        display: none !important;
+    }
+    .des-all-search {
+        display: none !important;
+    }
+    .partniors-des {
+        display: none !important;
+    }
+    .cards-sectiondesk {
+        display: none !important;
+    }
+    .desk-ad {
+        display: none;
+    }
+    .offer {
+        display: none;
+    }
+    .carousel1 {
+        display: none;
+    }
+    .services {
+        display: none;
+    }
+    .blog {
+        display: none !important;
+    }
+    .tree-card {
+        display: none;
+    }
+    .footer {
+        display: none;
+    }
+    .copy {
+        display: none;
+    }
+    hr {
+        display: none;
+    }
+}
+@media (min-width: 1200px) {
+    .main-desImg {
+        width: 550px;
+    }
+}
+@media (min-width: 1290px) {
+    .service-cards {
+        flex-direction: row !important;
+    }
+}
+@media (max-width: 1290px) {
+    .service-cards {
+        flex-direction: column !important;
+    }
+}

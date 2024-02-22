@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+}
+/*------------------top----------------------*/
+.top-first {
+    background-color: #306587;
+    display: flex;
+}
+.top-first p {
+   color: #fff;
+}
+/*------------------navbar----------------------*/
+nav {
+    background-color: #FFC33E;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    height: 100%;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+.sidebar {
+    position: fixed;
+    top: 68px;
+    right: 0;
+    height: 100vh;
+    width: 100%;
+    background-image: url(./nav-background.png);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.sidebar a {
+    color: #fff;
+}
+.menu-button {
+    display: none;
+}
+.numbers a {
+    width: 140px;
+    background-color: #FFC33E;
+    color: #fff;
+}
+.cards-section {
+    display: flex;
+}
+.cards-back {
+    display: flex;
+}
+.sm-card {
+    display: flex;
+} 
+@media(max-width: 992px) {
+    .hideOnMobile {
+        display: none;
+    }
+    .menu-button {
+        display: block;
+    }
+    .numbers {
+        display: none;
+    }
+    .logo-desktop {
+        display: none;
+    }
+    .top-first {
+        display: none !important;
+    }
+}
+@media(max-width: 400px) {
+    .sidebar {
+        width: 100%;
+    }
+}
+@media (min-width: 992px) {
+    .showOnMobile {
+        display: none;
+    }
+
+    ul {
+        flex-direction: row-reverse !important;
+        align-items: center !important;
+    }
+    .logo-mobile {
+        display: none;
+    }
+    .logo a {
+        display: none;
+    }
+    nav {
+        background-color: #fff;
+        align-items: center !important;
+    }
+}
+
+
+/*-------------------shigtavsi main----------------*/
+
+.shigtavsi-main {
+    display: flex;
+    width: 100%;
+}
+.shigtavsi-img {
+    background-image: url(./TUREBI/shigtavsi-main.png);
+    height: 400px;
+    width: 90%;
+}
+.shigtavsi-main p {
+    width: 100%;
+}
+
+
+/*------------second container--------------------*/
+
+.sec-containers {
+    display: flex;
+}
+.left-cont {
+    background-color: #fff;
+}
+.right-cont img {
+    width: 200px;
+}
+
+/*-------------ad--------------*/
+
+.ad {
+    display: flex;
+}
+.ad img {
+    width: 90%;
+}
+
+/*------------------rectangle-------------------*/
+
+.rectangle {
+    display: flex;
+}
+.rectangle img {
+    width: 200px;
+}
+
+/*----------------footer-----------------*/
+.footer {
+    display: flex;
+    width: 100%;
+  }
+  .top-footer a {
+    color: #181433;
+    text-decoration: none;
+    padding-top: 10px;
+  }
+  .copy {
+    display: flex;
+    width: 100%;
+  }
+
+
+
+
+@media (min-width: 992px) {
+    
+}
+
+
+@media (max-width: 992px) {
+    .shigtavsi-main {
+        display: none;
+    }
+    .sec-containers {
+        display: none;
+    } 
+    .ad {
+        display: none;
+    } 
+    .rectangle {
+        display: none;
+    }
+    .footer {
+        display: none;
+    }
+    .copy {
+        display: none;
+      }
+}

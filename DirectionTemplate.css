@@ -1,0 +1,304 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+}
+/*------------------top----------------------*/
+.top-first {
+    background-color: #306587;
+    display: flex;
+}
+.top-first p {
+   color: #fff;
+}
+/*------------------navbar----------------------*/
+nav {
+    background-color: #FFC33E;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    height: 100%;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+.sidebar {
+    position: fixed;
+    top: 68px;
+    right: 0;
+    height: 100vh;
+    width: 100%;
+    background-image: url(./nav-background.png);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.sidebar a {
+    color: #fff;
+}
+.menu-button {
+    display: none;
+}
+.numbers a {
+    width: 140px;
+    background-color: #FFC33E;
+    color: #fff;
+}
+.cards-section {
+    display: flex;
+}
+.cards-back {
+    display: flex;
+}
+.sm-card {
+    display: flex;
+} 
+@media(max-width: 992px) {
+    .hideOnMobile {
+        display: none;
+    }
+    .menu-button {
+        display: block;
+    }
+    .numbers {
+        display: none;
+    }
+    .logo-desktop {
+        display: none;
+    }
+    .top-first {
+        display: none !important;
+    }
+}
+@media(max-width: 400px) {
+    .sidebar {
+        width: 100%;
+    }
+}
+@media (min-width: 992px) {
+    .showOnMobile {
+        display: none;
+    }
+
+    ul {
+        flex-direction: row-reverse !important;
+        align-items: center !important;
+    }
+    .logo-mobile {
+        display: none;
+    }
+    .logo a {
+        display: none;
+    }
+    nav {
+        background-color: #fff;
+        align-items: center !important;
+    }
+}
+
+
+
+.avia-main {
+    display: flex;
+    width: 100%;
+}
+.avia-back {
+    background-image: url(./aviabiletebi/main.png);
+    width: 80%;
+}
+.des-all-search {
+    display: flex;
+}
+
+.input {
+    background-color: #306587;
+}
+.input-icons i {
+    position: absolute;
+    margin-left: 210px !important;
+}
+  
+.input-icons {
+    width: 100%;
+} 
+.input-field {
+    width: 100%;
+}
+input {
+    width: 250px !important;
+    height: 50px;
+    padding-left: 10px;
+    border: none;
+    outline: none;
+}
+input::placeholder {
+}
+form {
+    background-color: #fff;
+    width: 300px;
+}
+.search {
+    width: 300px;
+    display: flex;
+}
+button {
+    background-color: #4C9EFF;
+    border: none;
+    color: #fff;
+}
+
+/*-------------------desktop search--------------*/
+.inline {
+    display: flex;
+}
+.desktop-version {
+    display: flex;
+    background-image: url(./direction/main.png);
+    width: 90%;
+    height: 660px;
+}
+.des-all-search {
+    display: flex;
+    width: 100%;
+}
+.search-container {
+    background-color: #fff;
+    width: fit-content;
+    height: fit-content;
+}
+.search-des {
+    background-color: #fff;
+    color: #000000;
+    box-shadow:
+    0 0 0 1px #FFC33E,
+    0 0 0 1px #FFC33E;
+}
+.search-container input {
+    box-shadow:
+    0 0 0 1px #FFC33E,
+    0 0 0 1px #FFC33E;
+}
+.main-desImg {
+    width: 100%;
+}
+.airplaneimg {
+    display: flex;
+    max-width: 470px;
+    margin-top: 400px;
+}
+.des-mainImg {
+    display: flex;
+}
+.dissapear {
+    display: flex;
+}
+
+
+
+
+/*-----------------first container---------------*/
+.sec2-containers {
+    display: flex;
+}
+.left-cont {
+    background-color: #fff;
+}
+.right-cont img {
+    width: 200px;
+}
+
+
+.ad {
+    display: flex;
+}
+.ad img {
+    width: 90%;
+}
+
+
+
+/*-----------------last container------------*/
+.last-containers {
+    display: flex;
+}
+.rectangle {
+    display: flex;
+}
+.rectangle img {
+    width: 25% !important;
+}
+
+
+/*----------------footer-----------------*/
+.footer {
+    display: flex;
+    width: 100%;
+  }
+  .top-footer a {
+    color: #181433;
+    text-decoration: none;
+    padding-top: 10px;
+  }
+  .copy {
+    display: flex;
+    width: 100%;
+  }
+
+
+
+
+
+
+
+
+
+@media (min-width: 992px) {
+    
+}
+@media (max-width: 992px) {
+    .des-all-search {
+        display: none;
+    }
+    .dissapear {
+        display: none;
+    }
+    .ad {
+        display: none;
+    }
+    .sec2-containers {
+        display: none;
+    }
+    .last-containers {
+        display: none;
+    }
+    .rectangle {
+        display: none;
+    }
+    .footer {
+        display: none;
+    }
+    .copy {
+        display: none;
+    }
+}
+
+
+
+

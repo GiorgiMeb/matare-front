@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Mtavari.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <title>Matare.ge</title>
+</head>
+<body>
+
+    <!-------------------top----------------->
+    <div class="top-first justify-content-between align-items-center p-1 px-4">
+        <p class="m-0">თბილისი, საქართველო</p>
+        <p class="m-0">14:40</p>
+        <div class="soc-media-img">
+            <img src="./social media img/whatsApp.png" alt="">
+            <img src="./social media img/telegram.png" alt="">
+            <img src="./social media img/tiktok.png" alt="">
+            <img src="./social media img/instagram.png" alt="">
+            <img src="./social media img/linkedIn.png" alt="">
+            <img src="./social media img/youtube.png" alt="">
+            <img src="./social media img/appstore.png" alt="">
+            <img src="./social media img/googleplay.png" alt="">
+        </div>
+    </div>
+
+
+    <!----------------Navbar---------------->
+        <nav class="px-4 py-2 d-flex justify-content-between align-items-center justify-content-lg-between">
+            <a href="">
+                <img class="logo-desktop mt-2" src="./logoDesktop.png" alt="">
+            </a>
+            <ul class="d-flex justify-content-between align-items-center justify-content-lg-center px-lg-0">
+                <li class="menu-button" onclick="showSidebar()"><a class="px-lg-2" href="#"><img src="./menu.png" alt=""></a></li>
+                <li class="hideOnMobile"><a class="px-lg-2" href="./Contact.html">კონტაქტი</a></li>
+                <li class="hideOnMobile"><a class="px-lg-2" href="./Blog.html">ბლოგი</a></li>
+                <li class="hideOnMobile"><a class="px-lg-2" href="./ServiceTemplate.html">სერვისები</a></li>
+                <li class="hideOnMobile"><a class="px-lg-2" href="./Turebi.html">ტურები</a></li>
+                <li class="hideOnMobile"><a class="px-lg-2" href="./Sastumroebi.html">სასტუმრო</a></li>
+                <li class="hideOnMobile"><a class="px-lg-2" href="#">ავიაბილეთები</a></li>
+                <li>
+                    <a href="#">
+                        <div class="logo d-flex flex-column justify-content-center align-items-center">
+                            <img class="logo-mobile" src="./logo.png" alt="">
+                            <a class="logo-text" style="color: #fff;" href="#">იაფი ავიაბილეთები</a>
+                        </div>
+                    </a>
+                </li>
+                <a href="#">
+                    <img class="showOnMobile" src="./facebook.png" alt="">
+                </a>
+            </ul>
+            <ul class="sidebar">
+                <li class="" onclick="hideSidebar()"><a href="#"><img src="./exit.png" alt=""></a></li>
+                <li><a class="p-2" href="#">ავიაბილეთები</a></li>
+                <li><a class="p-2" href="./ServiceTemplate.html">სერვისები</a></li>
+                <li><a class="p-2" href="./Sastumroebi.html">სასტუმრო</a></li>
+                <li><a class="p-2" href="./Turebi.html">ტურები</a></li>
+                <li><a class="p-2" href="./Blog.html">ბლოგი</a></li>
+                <li><a class="p-2" href="./Contact.html">კონტაქტი</a></li>
+            </ul>
+            <div class="numbers d-lg-flex justify-content-center align-items-center flex-column">
+                <a class="rounded" href="#">+995 322 12 14 18</a>
+                <a class="rounded mt-2" href="#">+995 558 12 14 18</a>
+            </div>
+        </nav>
+
+        <!---------------search for mobile----------------->
+
+        <div class="input d-flex justify-content-center align-items-center flex-column py-4">
+            <form class="inline justify-content-center align-items-center flex-column py-4 my-3 rounded-4 rounded-lg-0">
+                <div class="input-icons d-flex justify-content-center align-items-center flex-column">
+                    <i class="ms-5"><img src="./input elements/tekeoff.png" alt=""></i>
+                    <input class="input-field rounded-3" type="text" placeholder="მიმართულება">
+                </div>
+                <div class="input-icons d-flex justify-content-center align-items-center flex-column mt-3">
+                    <i class="ms-5"><img src="./input elements/tekeoffleft.png" alt=""></i>
+                    <input class="input-field rounded-3" type="text" placeholder="დანიშნულება">
+                </div>
+                <div class="input-icons d-flex justify-content-center align-items-center flex-column mt-3">
+                    <i class="ms-5"><img src="./input elements/calendar.png" alt=""></i>
+                    <input class="input-field rounded-3" type="text" placeholder="გამგზავრება">
+                </div>
+                <div class="input-icons d-flex justify-content-center align-items-center flex-column mt-3">
+                    <i class="ms-5"><img src="./input elements/calendar.png" alt=""></i>
+                    <input class="input-field rounded-3" type="text" placeholder="დაბრუნება">
+                </div>
+                <div class="input-icons d-flex justify-content-center align-items-center flex-column mt-3">
+                    <i class="ms-5"><img src="./input elements/user.png" alt=""></i>
+                    <input class="input-field rounded-3" type="text" placeholder="მგზავრი">
+                </div>
+          </form>
+
+          <!--------------search for desktop--------------->
+          <div class="des-all-search justify-content-center align-items-center">
+              <div class="desktop-version d-flex flex-column p-5 rounded-5 flex-lg-row justify-content-center">
+                <div class="search-container p-3 px-4 rounded-4">
+                    <div class="input-des">
+                        <label for="formGroupExampleInput" class="form-label">მიმართულება</label>
+                        <div class="input-icons d-flex justify-content-start align-items-center mb-3">
+                            <i style="margin-left: 290px !important;" class="ms-5 position-absolute d-flex"><img src="./input desktop elements/takeoff2.png" alt=""></i>
+                            <input style="width: 350px !important;" type="text" class="form-control" id="formGroupExampleInput" placeholder="გთხოვთ აირჩიოთ ქალაქი">
+                          </div>
+                    </div>
+                    <div class="input-des">
+                        <label for="formGroupExampleInput" class="form-label">დანიშნულება</label>
+                        <div class="input-icons d-flex justify-content-start align-items-center mb-3">
+                            <i style="margin-left: 290px !important;" class="ms-5 position-absolute d-flex"><img src="./input desktop elements/takeoffrotate.png" alt=""></i>
+                            <input style="width: 350px !important;" type="text" class="form-control" id="formGroupExampleInput" placeholder="გთხოვთ აირჩიოთ ქალაქი">
+                          </div>
+                    </div>
+                    <div class="input-des">
+                        <label for="formGroupExampleInput" class="form-label">გამგზავრება</label>
+                        <div class="input-icons d-flex justify-content-start align-items-center mb-3">
+                            <i style="margin-left: 290px !important;" class="ms-5 position-absolute d-flex"><img src="./input elements/calendar.png" alt=""></i>
+                            <input style="width: 350px !important;" type="text" class="form-control" id="formGroupExampleInput" placeholder="გთხოვთ აირჩიოთ თარიღი">
+                          </div>
+                    </div>
+                    <div class="input-des">
+                        <label for="formGroupExampleInput" class="form-label">დაბრუნება</label>
+                        <div class="input-icons d-flex justify-content-start align-items-center mb-3">
+                            <i style="margin-left: 290px !important;" class="ms-5 position-absolute d-flex"><img src="./input elements/calendar.png" alt=""></i>
+                            <input style="width: 350px !important;" type="text" class="form-control" id="formGroupExampleInput" placeholder="გთხოვთ აირჩიოთ თარიღი">
+                          </div>
+                    </div>
+                    <div class="input-des">
+                        <label for="formGroupExampleInput" class="form-label">მგზავრები</label>
+                        <div class="input-icons d-flex justify-content-start align-items-center mb-3">
+                            <i style="margin-left: 290px !important;" class="ms-5 position-absolute d-flex"><img src="./input elements/user.png" alt=""></i>
+                            <input style="width: 350px !important;" type="text" class="form-control" id="formGroupExampleInput" placeholder="მგზავრი">
+                          </div>
+                          <div class="search-btn-des d-flex justify-content-end align-items-center">
+                              <button class="search-des p-3 rounded-4">ძიება <img class="ms-2" src="./input desktop elements/search-des.png" alt=""></button>
+                          </div>
+                    </div>
+                </div>
+                <div class="des-mainImg ms-xl-5 justify-content-center align-items-center flex-column">
+                    <img class="main-desImg ms-lg-5" src="./Contact/matare.png" alt="">
+                    <img style="width: 100%;" class="airplaneimg" src="./input desktop elements/airplane.png" alt="">
+                </div>
+                </div>
+          </div>
+          <div class="search justify-content-end align-items-center">
+              <button class="d-flex justify-content-center align-items-center px-3 py-2 rounded-2">ძიება <img src="./input elements/search.png" alt=""></button>
+          </div>
+
+          <!----------------partniors mobile---------------->
+          <div class="partniors justify-content-between align-items-center mt-5 rounded-4">
+              <img class="px-3" src="./partniors/part1.png" alt="">
+              <img class="px-3" src="./partniors/part2.png" alt="">
+              <img class="px-3" src="./partniors/part3.png" alt="">
+              <img class="px-3" src="./partniors/part4.png" alt="">
+          </div>
+
+
+          <!----------------partniors desktop-------------->
+          <div class="partniors-des"> 
+            <div class="scrolling-wrapper mt-5 px">
+                <div class="card px-3"><img src="./input desktop elements/partdes1.png" alt=""></div>
+                <div class="card px-3"><img src="./input desktop elements/partdes2.png" alt=""></div>
+                <div class="card px-3"><img src="./input desktop elements/partdes3.png" alt=""></div>
+                <div class="card px-3"><img src="./input desktop elements/partdes5.png" alt=""></div>
+                <div class="card px-3"><img src="./input desktop elements/partdes6.png" alt=""></div>
+              </div>
+          </div>
+        </div>
+
+
+        <!-------------------small cards mobile------------>
+        <div class="cards-section justify-content-center align-tems-center">
+            <div class="cards-back flex-column justify-content-center align-items-center text-center mt-5 rounded-4 py-3">
+                <span>რატომ</span>
+                <h1>MATARE.GE?</h1>
+                <div class="card-row1 d-flex justify-content-center align-items-center">
+                    <div class="sm-card flex-column justify-content-center align-items-center p-2">
+                        <img src="./sm-card image/sm-card1.png" alt="">
+                        <p>ბიუჯეტური ფასები</p>
+                    </div>
+                    <div class="sm-card flex-column justify-content-center align-items-center p-2">
+                        <img src="./sm-card image/sm-card2.png" alt="">
+                        <p>დიდი არჩევანი</p>
+                    </div>
+                    <div class="sm-card flex-column justify-content-center align-items-center p-2">
+                        <img style="width: 50px !important;" src="./sm-card image/sm-card3.png" alt="">
+                        <p class="mt-3">სანდოობა</p>
+                    </div>
+                </div>
+                <div class="card-row2 d-flex justify-content-center align-items-center text-center">
+                    <div class="sm-card flex-column justify-content-center align-items-center p-4">
+                        <img src="./sm-card image/sm-card2.png" alt="">
+                        <p>24/7 მხარდაჭერა</p>
+                    </div>
+                    <div class="sm-card flex-column justify-content-center align-items-center p-4">
+                        <img src="./sm-card image/sm-card1.png" alt="">
+                        <p>ბიუჯეტური ფასები</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-------------------small cards desktop------------>
+    <div class="cards-sectiondesk flex-column justify-content-center align-items-center px-3">
+            <h1><span style="font-size: 20px;">რატომ</span> MATARE.GE?</h1>
+            <div class="all-cardsdesk d-flex justify-content-center">
+                <div class="card-rowdesk d-flex justify-content-center align-items-center flex-column rounded-4 mx-3">
+                    <img src="./sm-card image/lg-card1.png" alt="">
+                    <h4 class="text-center">ბიუჯეტური ფასები</h4>
+                    <p class="text-center">ჩვენი საძიებო სისტემის წყალობით თქვენ შეძლებთ მოიძიოთ ავიაბილეთები ბიუჯეტურად და ფარული საკომისიოების გარეშე</p>
+                </div>
+                <div class="card-rowdesk d-flex justify-content-center align-items-center flex-column rounded-4 mx-3">
+                    <img src="./sm-card image/lg-card2.png" alt="">
+                    <h4 class="text-center">დიდი არჩევანი</h4>
+                    <p class="text-center">ჩვენ ვთანამშრომლობთ ათობით სხვადასხვა ავიაკომპანიასთან რაც საშუალებას გვაძლევს მომხმარებელს შევთავაზოთ უამრავი სხვადასხვა ვარიანტი </p>
+                </div>
+                <div class="card-rowdesk d-flex justify-content-center align-items-center flex-column rounded-4 mx-3">
+                    <img src="./sm-card image/lg-card3.png" alt="">
+                    <h4 class="text-center">პროფესიონალთა გუნდი</h4>
+                    <p class="text-center">ჩვენი საძიებო სისტემის წყალობით თქვენ შეძლებთ მოიძიოთ ავიაბილეთები ბიუჯეტურად და ფარული საკომისიოების გარეშე</p>
+                </div>
+                <div class="card-rowdesk d-flex justify-content-center align-items-center flex-column rounded-4 mx-3">
+                    <img src="./sm-card image/lg-card4.png" alt="">
+                    <h4 class="text-center">სანდოობა</h4>
+                    <p class="text-center">მატერეს გუნდს რამდენიმეწლიანი გამოცდილება აქვს გაყიდვების სფეროში, თითქმის საერთოდ არ გვყავს უკმაყოფილო მომხმარებელი</p>
+                </div>
+                <div class="card-rowdesk d-flex justify-content-center align-items-center flex-column rounded-4 mx-3">
+                    <img src="./sm-card image/lg-card5.png" alt="">
+                    <h4 class="text-center">27/7 მხარდაჭერა</h4>
+                    <p class="text-center">დაგვიკავშირდით დროის ნებისმიერ მონაკვეთში და ჩვენი ოპერატორები გაგიწევენ სწრაფ და სრულყოფილ მომსახურებას</p>
+                </div>
+            </div>
+    </div>
+
+    <!----------------photos mobile--------------->
+    <div class="photos justify-content-center align-items-center mt-5 flex-column py-4">
+        <div class="photos-back">
+            <div class="p-row1">
+                <img class="p-2" src="./city-photos/milan.png" alt="">
+                <img class="p-2" src="./city-photos/azer.png" alt="">
+            </div>
+            <div class="p-row1">
+                <img class="p-2" src="./city-photos/armenia.png" alt="">
+                <img class="p-2" src="./city-photos/qatar.png" alt="">
+            </div>
+        </div>
+        <div style="width: 300px;" class="d-flex flex-column justify-content-start mt-5">
+            <h3 style="color: #fff;" class="text-center">ავიაბილეთები</h3>
+            <p style="color: #fff;" class="text-center">შეიძინე ავიაბილეთები ნებისმიერი მიმართულებით სწრაფად და მარტივად მატარესთან ერთად</p>
+            <a class="more-btn d-flex justify-content-center align-items-center p-2 mt-4" style="text-decoration: none; color: #fff; width: fit-content;" href="#">მეტის ნახვა <img src="./small icons/arrow-right.png" alt=""></a>
+        </div>
+
+    </div>
+
+
+    <!------------advertisment--------------->
+    <div class="desk-ad justify-content-center align-items-center mt-5">
+        <img class="d-flex justify-content-center align-items-center mt-4" src="./ad/desk-advertisment.png" alt="">
+    </div>
+
+
+    <!-----------------შეთავაზება desktop-------------->
+
+    <div class="offer mt-5 px-2">
+
+        <div class="offer-cards d-flex flex-column ">
+            <h1>ჩვენ გთავაზობთ</h1>
+            <div class="offer-cardex d-flex align-items-center mt-5">
+                <img src="./offer img/offer-card1.png" alt="">
+                <div class="offer-cardtext">
+                    <h3 class="ms-3">იაფი ავიაბილეთები</h3>
+                    <p class="ms-3" style="width: 250px;">შეიძინეთ იაფი ავიაბილეთები ნებისმიერი მიმართულებით სწრაფად და მარტივად</p>
+                </div>
+            </div>
+            <div class="offer-cardex d-flex align-items-center">
+                <img src="./offer img/offer-card2.png" alt="">
+                <div class="offer-cardtext">
+                    <h3 class="ms-3">ავიაბილეთის ფასის გაყინვა 48 საათით</h3>
+                    <p class="ms-3" style="width: 250px;">გააკეთე ჯავშანი სრულიად უფასოდ 48 საათოით და დაიზღვიე თავი ბილეთის უეცარი გაძვირებისგან</p>
+                </div>
+            </div>
+            <div class="offer-cardex d-flex align-items-center">
+                <img src="./offer img/offer-card3.png" alt="">
+                <div class="offer-cardtext">
+                    <h3 class="ms-3">გადახდის კომფორტული სისტემა</h3>
+                    <p class="ms-3" style="width: 250px;">გადაიხადეთ თანხა საქარელოს ბანკის, თიბისი ბანკის, ლიბერთი ბანკის, ბანკ პარიბასის ან ნებისმიერი გზავნილის მეშვეობით</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="offer-container d-flex judtify-content-center align-items-center">
+            <div class="offer-contex d-flex judtify-content-center align-items-center flex-column">
+                <img style="width: 200px;" src="./offer img/offer-container1.png" alt="">
+                <h3 class="text-center mt-3">როგორ შევიძინო ავიაბილეთი განვადებით</h3>
+                <p class="text-center mt-3 px-2">Lorem ipsum dolor sit amet consectetur. Feugiat magna tincidunt at nunc lectus sed malesuada laoreet sed. Ac elementum cursus tellus erat felis vitae. A magna sed eu massa elit tincidunt tellus maecenas.</p>
+                <button class="offer-btn p-2 rounded-4">გაიგე მეტი</button>
+                <img class="mt-4" src="./offer img/signer.png" alt="">
+            </div>
+            <div class="offer-contex d-flex judtify-content-center align-items-center flex-column">
+                <img style="width: 200px;" src="./offer img/offer-container2.png" alt="">
+                <h3 class="text-center mt-3">ბარგიანი ბილეთები ყველაზე
+                    დაბალ ფასად</h3>
+                <p class="text-center mt-3 px-2">Lorem ipsum dolor sit amet consectetur. Feugiat magna tincidunt at nunc lectus sed malesuada laoreet sed. Ac elementum cursus tellus erat felis vitae. A magna sed eu massa elit tincidunt tellus maecenas.</p>
+                <button class="offer-btn p-2 rounded-4">გაიგე მეტი</button>
+                <img class="mt-4" src="./offer img/signer.png" alt="">
+            </div>
+            <div class="offer-contex d-flex judtify-content-center align-items-center flex-column">
+                <img style="width: 200px;" src="./offer img/offer-container3.png" alt="">
+                <h3 class="text-center mt-3">სამოგზაურო დაზღვევა</h3>
+                <p class="text-center mt-3 px-2">Lorem ipsum dolor sit amet consectetur. Feugiat magna tincidunt at nunc lectus sed malesuada laoreet sed. Ac elementum cursus tellus erat felis vitae. A magna sed eu massa elit tincidunt tellus maecenas.</p>
+                <button class="offer-btn p-2 rounded-4">გაიგე მეტი</button>
+                <img class="mt-4" src="./offer img/signer.png" alt="">
+            </div>
+        </div>
+    </div>
+
+
+    <!----------------carousel desktop---------------->
+
+    <div class="carousel1 justify-content-center align-items-center mt-5">
+        <div id="carouselExample" class="carousel slide ">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./city-photos/carousel-img1.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./city-photos/carousel-img2.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./city-photos/carousel-img3.png" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </div>
+
+    <!------------------services desktop ----------------->
+
+    <div class="services flex-column justify-content-center align-items-center mt-5 py-2">
+        <h1>სერვისები</h1>
+        <div class="service-cards justify-content-center align-items-center mt-4">
+            <div class="service-row1 d-flex">
+                <img class="p-2" src="./service img/service1.png" alt="">
+                <img class="p-2" src="./service img/service2.png" alt="">
+                <img class="p-2" src="./service img/service3.png" alt="">
+            </div>
+            <div class="service-row2 d-flex">
+                <img class="p-2" src="./service img/service4.png" alt="">
+                <img class="p-2" src="./service img/service5.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!------------------blog------------------->
+
+    <div class="blog flex-column justify-content-center align-items-center px-xl-3">
+        <h1>ბლოგი</h1>
+        <p class="text-center mt-3" style="width: 500px;">Lorem ipsum dolor sit amet consectetur. Accumsan vitae tincidunt ultrices adipiscing in sed vitae et ac. Duis congue sit quam egestas sagittis blandit neque facilisi. Turpis ligula ultricies ante dictum </p>
+        <div class="all-blog d-flex justify-content-center mt-5">
+            <div class="left-blog d-flex flex-column">
+                <img style="width: 400px;" src="./blog/lg-rectangle.png" alt="">
+                <div class="blog-text">
+                    <div class="text-date d-flex justify-content-between">
+                        <h2 style="width: 300px;">Lorem ipsum dolor sit amet consectetur. Accumsan</h2>
+                        <p>JUN 5 2006</p>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur. Accumsan vitae tincidunt ultrices adipiscing in sed vitae et ac. Duis congue sit</p>
+                </div>
+            </div>
+            <div class="rb-blog ms-5 d-flex flex-column ">
+                <div class="right-blog d-flex">
+                    <div class="rb-text">
+                        <h3 style="width: 300px !important;">Lorem ipsum dolor sit amet consectetur</h3>
+                        <p class="pe-2" style="width: 400px !important;">Lorem ipsum dolor sit amet consectetur. Accumsan vitae tincidunt </p>
+                        <p>JUN 5 2006</p>
+                    </div>
+                    <img style="width: 200px; height: 150px;" src="./blog/sm-rectangle.png" alt="">
+                </div>
+                <div class="right-blog d-flex mt-2">
+                    <div class="rb-text">
+                        <h3 style="width: 300px !important;">Lorem ipsum dolor sit amet consectetur</h3>
+                        <p class="pe-2" style="width: 400px !important;">Lorem ipsum dolor sit amet consectetur. Accumsan vitae tincidunt </p>
+                        <p>JUN 5 2006</p>
+                    </div>
+                    <img style="width: 200px; height: 150px;" src="./blog/sm-rectangle.png" alt="">
+                </div>
+                <div class="right-blog d-flex mt-2">
+                    <div class="rb-text">
+                        <h3 style="width: 300px !important;">Lorem ipsum dolor sit amet consectetur</h3>
+                        <p class="pe-2" style="width: 400px !important;">Lorem ipsum dolor sit amet consectetur. Accumsan vitae tincidunt </p>
+                        <p>JUN 5 2006</p>
+                    </div>
+                    <img style="width: 200px; height: 150px;" src="./blog/sm-rectangle.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--------------three card-->
+    <div class="tree-card justify-content-center align-items-start flex-column mt-5">
+        <h1 class="mt-5 ms-2" style="width: 900px;">Lorem ipsum dolor sit amet consectetur. Suspendisse.</h1>
+        <div class="all3card d-flex mt-5 justify-content-center align-items-center">
+            <div class="inner-3card d-flex flex-column p-3 rounded-4 m-2">
+                <p>Lorem ipsum dolor sit amet consectetur. Adipiscing feugiat consectetur erat rhoncus in. Nisl duis at tempor aliquet a ultrices mattis elit aenean. Duis vitae pulvinar quam magna nam ante sed. Consectetur eget nunc accumsan libero.</p>
+                <div class="icon-text d-flex">
+                    <img src="./blog/icon.png" alt="">
+                    <div class="col-text ms-3">
+                        <h4>LOREM IPSUM</h4>
+                        <p>LOREM IPSUM</p>
+                    </div>
+                </div>
+            </div>
+            <div class="inner-3card d-flex flex-column p-3 rounded-4 m-2">
+                <p>Lorem ipsum dolor sit amet consectetur. Adipiscing feugiat consectetur erat rhoncus in. Nisl duis at tempor aliquet a ultrices mattis elit aenean. Duis vitae pulvinar quam magna nam ante sed. Consectetur eget nunc accumsan libero.</p>
+                <div class="icon-text d-flex">
+                    <img src="./blog/icon.png" alt="">
+                    <div class="col-text ms-3">
+                        <h4>LOREM IPSUM</h4>
+                        <p>LOREM IPSUM</p>
+                    </div>
+                </div>
+            </div>
+            <div class="inner-3card d-flex flex-column p-3 rounded-4 m-2">
+                <p>Lorem ipsum dolor sit amet consectetur. Adipiscing feugiat consectetur erat rhoncus in. Nisl duis at tempor aliquet a ultrices mattis elit aenean. Duis vitae pulvinar quam magna nam ante sed. Consectetur eget nunc accumsan libero.</p>
+                <div class="icon-text d-flex">
+                    <img src="./blog/icon.png" alt="">
+                    <div class="col-text ms-3">
+                        <h4>LOREM IPSUM</h4>
+                        <p>LOREM IPSUM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr class="mt-5">
+    <div class="footer justify-content-center align-items-center mt-5 p-2 flex-column">
+        <div class="top-footer d-flex">
+            <div class="matare-link d-flex flex-column m-2">
+                <h2>MATARE.GE</h2>
+                <a href="#">ჩვენს შესახებ</a>
+                <a href="#">ავიაბილეთები</a>
+                <a href="#">სერვისები</a>
+                <a href="#">კომფიდენციალურობის პოლიტიკა</a>
+                <a href="#">ხშირად დასმული  კითხვები</a>
+            </div>
+            <div class="sasargeblo-link d-flex flex-column m-2">
+                <h2>სასარგებლო</h2>
+                <a href="#">დაზღვევა</a>
+                <a href="#">სასტუმროები</a>
+                <a href="#">კომპენსაცია</a>
+                <a href="#">კარიერა</a>
+                <a href="#">ბლოგი</a>
+            </div>
+            <div class="airport-link d-flex flex-column m-2">
+                <h2>აეროპორტები</h2>
+                <a href="#">ავიაბილეთები თბილისიდან</a>
+                <a href="#">ავიაბილეთები ქუთაისიდან</a>
+                <a href="#">ავიაბილეთები ბათუმიდან</a>
+                <a href="#">ავიაბილეთები ტრაბზონიდან</a>
+                <a href="#">ავიაბილეთები ერევნიდან</a>
+            </div>
+            <div class="contact-link d-flex flex-column m-2">
+                <h2>კონტაქტი</h2>
+                <a href="#"><img src="./footer-contact-img/f-text.png" alt="">მოგვწერეთ</a>
+                <a href="#"> <img src="./footer-contact-img/f-phone.png" alt="">+995 322 12 14 18</a>
+                <a href="#"> <img src="./footer-contact-img/f-phone.png" alt="">+995 558 12 14 18</a>
+                <a href="#"><img src="./footer-contact-img/f-mail.png" alt="">MATARETRAVEL@GMAIL.COM</a>
+            </div>
+        </div>
+        <div class="bottom-footer d-flex flex-column">
+            <div class="f-socmedia">
+                <img class="p-3" src="./footer-contact-img/facebook.png" alt="">
+                <img class="p-3" src="./footer-contact-img/whatsapp.png" alt="">
+                <img class="p-3" src="./footer-contact-img/gmail.png" alt="">
+                <img class="p-3" src="./footer-contact-img/appstore.png" alt="">
+                <img class="p-3" src="./footer-contact-img/googleplay.png" alt="">
+            </div>
+            <div class="f-map">
+                <img src="./footer-contact-img/map.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="copy justify-content-center align-items-center mt-5">
+        <p>Copyright 2024. BY MATARE.GE</p>
+    </div>
+
+
+
+    <!-----------------FOR MOBILE CONTINUE--------------->
+
+    <div class="smdes-card flex-column justify-content-center align-items-center mt-5">
+        <div class="smdescard-bck d-flex justify-content-center align-items-center flex-column shadow p-3">
+            <h1>ჩვენ გთავაზობთ </h1>
+            <div class="smdescard d-flex flex-column">
+                <div class="smdes-ex d-flex mt-4">
+                    <div class=" me-3">
+                        <img src="./small icons/ticketmob1.png" alt="">
+                    </div>
+                    <div class="">
+                        <h3>იაფი ავიაბილეთები</h3>
+                        <p>შეიძინეთ  იაფი ავიაბილეთები  ნებისმიერი
+                            მიმართულებით 100 ლარიდან</p>
+                    </div>
+                </div>
+                <div class="smdes-ex d-flex mt-4">
+                    <div class=" me-3">
+                        <img src="./small icons/ticketmob1.png" alt="">
+                    </div>
+                    <div class="">
+                        <h3>ავიაბილეთის ფასის გაყინვა 48 საათით</h3>
+                        <p>გააკეთეთ ჯავშანი სრულიად უფასოდ
+                            48 საათით დაიზღვიე თავი ბილეთის უეცარი გაძვირებისგან </p>
+                    </div>
+                </div>
+                <div class="smdes-ex d-flex mt-4">
+                    <div class=" me-3">
+                        <img src="./small icons/ticketmob1.png" alt="">
+                    </div>
+                    <div class="">
+                        <h3>გადახდის კომფორტული სისტემა</h3>
+                        <p>გადაიხადეთ თანხა  საქართველოს ბანკის,
+                            თიბისი ბანკის,ლიბერთი ბანკის,  
+                            BNP PARIBAS-ის ან ნებისმიერი გზავნილის 
+                            მეშვეობით...
+                            </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---------------mobile services---------------->
+
+    <div class="mb-service flex-column justify-content-center align-items-center mt-5 py-4">
+        <h1 style="color: #fff;">სერვისები</h1>
+        <p class="text-center mt-3" style="width: 300px; color: #fff;">Lorem ipsum dolor sit amet consectetur. Rutrum eget neque aenean a maecenas magnis leo. Eu eget nunc risus massa a duis. Vulputate scelerisque lacus ultricies.</p>
+        <div class="allmb-services d-flex justify-content-center align-items-center mt-4">
+            <img src="./small icons/mb-service.png" alt="">
+            <div class="d-flex flex-column">
+                <div class="d-flex justify-content-start align-items-center">
+                    <img src="./small icons/verification.png" alt="">
+                    <p class="mb-2">კომპენსაცია</p>
+                </div>
+                <div class="d-flex justify-content-start align-items-center">
+                    <img src="./small icons/verification.png" alt="">
+                    <p class="mb-2">სამოგზურო SIM</p>
+                </div>
+                <div class="d-flex justify-content-start align-items-center">
+                    <img src="./small icons/verification.png" alt="">
+                    <p class="mb-2">ავტობუსის ბილეთები</p>
+                </div>
+                <div class="d-flex justify-content-start align-items-center">
+                    <img src="./small icons/verification.png" alt="">
+                    <p class="mb-2">ბარგიანი ავიაბილეთები</p>
+                </div>
+                <div class="d-flex justify-content-start align-items-center">
+                    <img src="./small icons/verification.png" alt="">
+                    <p class="mb-2">ავიაბილეთები განვადებით</p>
+                </div>
+            </div>
+        </div>
+        <a class="more-btn d-flex justify-content-center align-items-center p-2 mt-4" style="text-decoration: none; color: #fff;" href="#">მეტის ნახვა <img src="./small icons/arrow-right.png" alt=""></a>
+    </div>
+
+    
+    <!-------------------time mobile------------------->
+
+    <div class="time-container flex-column justify-content-center align-items-center mt-5 p-2">
+        <h1 class="text-center" style="width: 350px;">Lorem ipsum dolor sit amet consectetur. Morbi quam dui </h1>
+        <div class="d-flex mt-3">
+            <div class="d-flex flex-column justify-content-center align-items-center p-3">
+                <img src="./small icons/time-rectangle1.png" alt="">
+                <h2 class="mt-2">120m</h2>
+                <p>Lorem ipsum</p>
+            </div>
+            <div class="d-flex flex-column justify-content-center align-items-center p-3">
+                <img src="./small icons/time-rectangle1.png" alt="">
+                <h2 class="mt-2">10.000</h2>
+                <p>Lorem ipsum</p>
+            </div>
+            <div class="d-flex flex-column justify-content-center align-items-center p-3">
+                <img src="./small icons/time-rectangle1.png" alt="">
+                <h2 class="mt-2">240</h2>
+                <p>Lorem ipsum</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!------------------blog mobile------------------>
+    
+    <div class="mb-blog flex-column jusdtify-content-center align-items-center mt-5 py-5">
+        <h1 style="color: #fff;">ბლოგი</h1>
+        <div class="blogmb-card d-flex jusdtify-content-center align-items-center flex-column mt-5">
+            <img src="./small icons/blog-mobileimg.png" alt="">
+            <div class="blogmb-text d-flex flex-column justify-content-center mt-3">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h3 style="color: #fff;">Category</h3>
+                    <p style="color: #fff;" class="m-0">November 22, 2021</p>
+                </div>
+                <p style="color: #fff !important;" class="mt-3">Seed round direct mailing non-disclosure agreement graphical user interface rockstar.</p>
+                <a class="more-btn d-flex justify-content-center align-items-center p-2 mt-3" style="text-decoration: none; color: #fff; width: fit-content;" href="#">მეტის ნახვა <img src="./small icons/arrow-right.png" alt=""></a>
+            </div>
+        </div>
+        <div class="blogmb-card d-flex jusdtify-content-center align-items-center flex-column mt-5">
+            <img src="./small icons/blog-mobileimg.png" alt="">
+            <div class="blogmb-text d-flex flex-column justify-content-center mt-3">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h3 style="color: #fff;">Category</h3>
+                    <p style="color: #fff;" class="m-0">November 22, 2021</p>
+                </div>
+                <p style="color: #fff !important;" class="mt-3">Seed round direct mailing non-disclosure agreement graphical user interface rockstar.</p>
+                <a class="more-btn d-flex justify-content-center align-items-center p-2 mt-3" style="text-decoration: none; color: #fff; width: fit-content;" href="#">მეტის ნახვა <img src="./small icons/arrow-right.png" alt=""></a>
+            </div>
+        </div>
+        <div class="blogmb-card d-flex jusdtify-content-center align-items-center flex-column mt-5">
+            <img src="./small icons/blog-mobileimg.png" alt="">
+            <div class="blogmb-text d-flex flex-column justify-content-center mt-3">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h3 style="color: #fff;">Category</h3>
+                    <p style="color: #fff;" class="m-0">November 22, 2021</p>
+                </div>
+                <p style="color: #fff !important;" class="mt-3">Seed round direct mailing non-disclosure agreement graphical user interface rockstar.</p>
+                <a class="more-btn d-flex justify-content-center align-items-center p-2 mt-3" style="text-decoration: none; color: #fff; width: fit-content;" href="#">მეტის ნახვა <img src="./small icons/arrow-right.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+
+
+    <!---------------------desktop carouse------------------>
+
+
+    <div class="desk-carousel justify-content-center align-items-center mt-5">
+        <div class="desk-carouselbck d-flex flex-column justify-content-center align-items-center shadow py-3 rounded">
+            <h1>შეფასებები</h1>
+            <div class="car-arrows mt-3">
+                <button style="background-color: #fff;" class="me-5"><img src="./small icons/carousel-arrleft.png" alt=""></button>
+                <img src="./small icons/user.png" alt="">
+                <button class="ms-5" style="background-color: #fff;"><img src="./small icons/carousel-arrright.png" alt=""></button>
+            </div>
+            <p style="width: 300px;" class="text-center mt-3">მატარეს დახმარებით ვიმოგზაურე ალანიაში,უპრობლემოდ გავფრინდით დამხვედრიკომპანიაც იქვე იყო მიგვიყვანა სასტუმრომდე, ასევე უკანა გზაზეც, არანაირი პრობლემა ან გაუგებრობა არ ყოფილა არაფერზე, კმაყოფილი ვარ ძალიან 🙌🏼</p>
+            <h4>საბა სარაშვილი</h4>
+        </div>
+    </div>
+
+
+    <!---------------footer mobile----------------->
+
+    <div class="footer-mob flex-column mt-5">
+        <div class="footermob-bck d-flex flex-column mt-4 p-3">
+            <a class="py-2" href="#">ჩვენს შესახებ</a>
+            <a class="py-2" href="#">ავიაბილეთები</a>
+            <a class="py-2" href="#">სერვისები</a>
+            <a class="py-2" href="#">კომფიდენციალურობის პოლიტიკა</a>
+            <a class="py-2" href="#">ხშირად დასმული  კითხვები</a>
+            <a class="py-2" href="#">დაზღვევა</a>
+            <a class="py-2" href="#">სასტუმროები</a>
+            <a class="py-2" href="#">კომპენსაცია</a>
+            <a class="py-2" href="#">კარიერა</a>
+            <a class="py-2" href="#">ბლოგი</a>
+            <a class="py-2" href="#">ავიაბილეთები თბილისიდან</a>
+            <a class="py-2" href="#">ავიაბილეთები ქუთაისიდან</a>
+            <a class="py-2" href="#">ავიაბილეთები ბათუმიდან</a>
+            <a class="py-2" href="#">ავიაბილეთები ტრაბზონიდან</a>
+            <a class="py-2" href="#">ავიაბილეთები ერევნიდან</a>
+        </div>
+        <div class="map-foter d-flex justify-content-center align-items-center mt-5">
+            <img style="width: 300px;" src="./footer mobile/map.png" alt="">
+        </div>
+        <div class="contact-mobile d-flex flex-column justify-content-center align-items-center mt-4">
+            <h2>კონტაქტი</h2>
+            <div class="contact-links d-flex flex-column justify-content-center align-items-start mt-4">
+                <a class="mt-2 p-2 rounded-3" href="#"><img src="./footer-contact-img/f-text.png" alt="">მოგვწერეთ</a>
+                <a class="mt-2 p-2 rounded-3" href="#"> <img src="./footer-contact-img/f-phone.png" alt="">+995 322 12 14 18</a>
+                <a class="mt-2 p-2 rounded-3" href="#"> <img src="./footer-contact-img/f-phone.png" alt="">+995 558 12 14 18</a>
+                <a class="mt-2 p-2 rounded-3" href="#"><img src="./footer-contact-img/f-mail.png" alt="">MATARETRAVEL@GMAIL.COM</a>
+            </div>
+        </div>
+        <div class="social-mediamb d-flex justify-content-center align-items-center">
+            <img class="p-2" src="./footer mobile/facebook.png" alt="">
+            <img class="p-2" src="./footer mobile/whatsapp.png" alt="">
+            <img class="p-2" src="./footer mobile/gmail.png" alt="">
+            <img class="p-2" src="./footer mobile/appstore.png" alt="">
+            <img class="p-2" src="./footer mobile/googleplay.png" alt="">
+        </div>
+        <div class="copy d-flex justify-content-center align-items-center ">
+            <p>Copyright 2024. BY MATARE.GE</p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script>
+        function showSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,313 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+}
+/*------------------top----------------------*/
+.top-first {
+    background-color: #306587;
+    display: flex;
+}
+.top-first p {
+   color: #fff;
+}
+/*------------------navbar----------------------*/
+nav {
+    background-color: #FFC33E;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    height: 100%;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+.sidebar {
+    position: fixed;
+    top: 68px;
+    right: 0;
+    height: 100vh;
+    width: 100%;
+    background-image: url(./nav-background.png);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.sidebar a {
+    color: #fff;
+}
+.menu-button {
+    display: none;
+}
+.numbers a {
+    width: 140px;
+    background-color: #FFC33E;
+    color: #fff;
+}
+.cards-section {
+    display: flex;
+}
+.cards-back {
+    display: flex;
+}
+.sm-card {
+    display: flex;
+} 
+@media(max-width: 992px) {
+    .hideOnMobile {
+        display: none;
+    }
+    .menu-button {
+        display: block;
+    }
+    .numbers {
+        display: none;
+    }
+    .logo-desktop {
+        display: none;
+    }
+    .top-first {
+        display: none !important;
+    }
+}
+@media(max-width: 400px) {
+    .sidebar {
+        width: 100%;
+    }
+}
+@media (min-width: 992px) {
+    .showOnMobile {
+        display: none;
+    }
+
+    ul {
+        flex-direction: row-reverse !important;
+        align-items: center !important;
+    }
+    .logo-mobile {
+        display: none;
+    }
+    .logo a {
+        display: none;
+    }
+    nav {
+        background-color: #fff;
+        align-items: center !important;
+    }
+}
+
+
+
+/*---------------------main blog-----------------*/
+.main-blog {
+    display: flex;
+    width: 100%;
+}
+.right-blog img {
+    width: 200px ;
+}
+.left-blog img {
+    width: 90%;
+}
+.left-blog button {
+    background-color: #4C9EFF;
+    border: none;
+}
+.present {
+    width: 90% !important;
+}
+
+
+/*-----------------container----------------*/
+
+.sec-containers {
+    display: flex;
+}
+.left-cont {
+    background-color: #fff;
+}
+.right-cont img {
+    width: 200px;
+}
+
+
+.ad {
+    display: flex;
+}
+
+
+.end-text {
+    width: 100%;
+}
+.btns button {
+    border: 1px solid #000000;
+    outline: none;
+    background-color: #F3B02E;
+    font-weight: 800;
+}
+
+
+
+/*-------------------------rectangle---------------------*/
+.rectangles {
+    display: flex;
+}
+.rectangles img {
+    width: 200px;
+}
+
+
+/*---------------footer--------------------*/
+.footer {
+    display: flex;
+    width: 100%;
+  }
+  .top-footer a {
+    color: #181433;
+    text-decoration: none;
+    padding-top: 10px;
+  }
+  .copy {
+    display: flex;
+    width: 100%;
+  }
+
+
+
+  /*-------------M O B I L E-------------*/
+
+  .mob-all {
+    display: flex;
+  }
+  .mob-bck {
+    background-image: url(./MOBILE/sastumromain.png);
+    width: 90%;
+    height: 100px;
+  }
+  .house-containers {
+    display: flex;
+  }
+  .mob-ad {
+    display: flex;
+  }
+  .mob-ad img {
+    width: 100%;
+  }
+  .a-container button {
+    background-color: #4C9EFF;
+    border: none;
+}
+
+
+
+
+
+  /*-----------divided container-------*/
+  .divide {
+    display: flex;
+  }
+  
+
+
+
+  /*--------------scroll--------------*/
+.scroll-mob {
+    display: flex;
+}
+.partniors-des {
+    display: flex;
+}
+.scrolling-wrapper {
+    width: 350px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+  
+   .card {
+      display: inline-block;
+    }
+  }
+  .scrolling-wrapper {
+    -webkit-overflow-scrolling: touch;
+  }
+  .scrolling-wrapper::-webkit-scrollbar {
+    width: 14px;               /* width of the entire scrollbar */
+  }
+
+   /*-----------------footer mobile--------------*/
+
+   .footer-mob {
+    display: flex;
+    width: 100%;
+    background-color: #FFC33E;
+  }
+  .footermob-bck a {
+    color: #000000;
+  }
+  .contact-links a {
+    background-color: #FFFFFF;
+    color: #000000;
+    text-decoration: none;
+    width: 100%;
+  }
+
+
+
+  @media (min-width: 992px) {
+    .mob-all {
+        display: none;
+      }
+      .house-containers {
+        display: none;
+      }
+      .mob-ad {
+        display: none;
+      }
+      .divide {
+        display: none;
+      }
+      .scroll-mob {
+        display: none;
+    }
+    .footer-mob {
+        display: none;
+    }
+  }
+  @media (max-width: 992px) {
+      .main-blog {
+          display: none;
+      }
+      .sec-containers {
+          display: none;
+      }
+      .ad {
+          display: none;
+      }
+      .rectangles {
+          display: none;
+      }
+      .footer {
+          display: none;
+      }
+      .copy {
+          display: none;
+      }
+  }
+  
