@@ -6,6 +6,19 @@
 body {
     min-height: 100vh;
 }
+h4 {
+  font-family: "BPG Nino Mtavruli", sans-serif;
+}
+h1 {
+  font-family: "BPG Nino Mtavruli", sans-serif;
+}
+h2 {
+  font-family: "BPG Nino Mtavruli", sans-serif;
+}
+h3 {
+  font-family: "BPG Nino Mtavruli", sans-serif;
+}
+
 /*------------------top----------------------*/
 .top-first {
     background-color: #306587;
@@ -124,6 +137,7 @@ nav a {
 .avia-back {
     background-image: url(./aviabiletebi/togeomain.png);
     width: 80%;
+    
 }
 .des-all-search {
     display: flex;
@@ -164,6 +178,12 @@ button {
     background-color: #4C9EFF;
     border: none;
     color: #fff;
+    font-family: "BPG Nino Mtavruli", sans-serif;
+
+}
+label {
+  font-family: "BPG Nino Mtavruli", sans-serif;
+
 }
 
 /*-------------------desktop search--------------*/
@@ -175,6 +195,9 @@ button {
     background-image: url(./aviabiletebi/main.png);
     width: 90%;
     height: 660px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .des-all-search {
     display: flex;
@@ -310,6 +333,9 @@ button {
     background-image: url(./MOBILE/ToGeomain.png);
     width: 100% ;
     height: 200px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   .maintext-img {
     width: 100%;

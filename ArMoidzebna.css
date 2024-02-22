@@ -6,6 +6,23 @@
 body {
     min-height: 100vh;
 }
+h4 {
+    font-family: "BPG Nino Mtavruli", sans-serif;
+  }
+  h1 {
+    font-family: "BPG Nino Mtavruli", sans-serif;
+  }
+  h2 {
+    font-family: "BPG Nino Mtavruli", sans-serif;
+  }
+  h3 {
+    font-family: "BPG Nino Mtavruli", sans-serif;
+  }
+  h5 {
+    font-family: "BPG Nino Mtavruli", sans-serif;
+  }
+  
+  
 /*------------------top----------------------*/
 .top-first {
     background-color: #306587;

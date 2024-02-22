@@ -6,6 +6,19 @@
 body {
     min-height: 100vh;
 }
+h4 {
+    font-family: "BPG Nino Mtavruli", sans-serif;
+  }
+  h1 {
+    font-family: "BPG Nino Mtavruli", sans-serif;
+  }
+  h2 {
+    font-family: "BPG Nino Mtavruli", sans-serif;
+  }
+  h3 {
+    font-family: "BPG Nino Mtavruli", sans-serif;
+  }
+ 
 /*------------------top----------------------*/
 .top-first {
     background-color: #306587;
@@ -173,6 +186,9 @@ button {
     background-image: url(./direction/main.png);
     width: 90%;
     height: 660px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .des-all-search {
     display: flex;

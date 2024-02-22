@@ -6,6 +6,19 @@
 body {
     min-height: 100vh;
 }
+h4 {
+    font-family: "BPG Nino Mtavruli", sans-serif;
+}
+h1 {
+    font-family: "BPG Nino Mtavruli", sans-serif;
+}
+h2 {
+    font-family: "BPG Nino Mtavruli", sans-serif;
+}
+h3 {
+    font-family: "BPG Nino Mtavruli", sans-serif;
+}
+
 /*------------------top----------------------*/
 .top-first {
     background-color: #306587;
@@ -124,6 +137,9 @@ nav a {
     background-image: url(./TUREBI/shigtavsi-main.png);
     height: 400px;
     width: 90%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .shigtavsi-main p {
     width: 100%;

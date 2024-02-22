@@ -6,6 +6,19 @@
 body {
     min-height: 100vh;
 }
+h4 {
+    font-family: "BPG Nino Mtavruli", sans-serif;
+}
+h1 {
+    font-family: "BPG Nino Mtavruli", sans-serif;
+}
+h2 {
+    font-family: "BPG Nino Mtavruli", sans-serif;
+}
+h3 {
+    font-family: "BPG Nino Mtavruli", sans-serif;
+}
+
 /*------------------top----------------------*/
 .top-first {
     background-color: #306587;
@@ -203,7 +216,10 @@ nav a {
   .mob-bck {
     background-image: url(./MOBILE/sastumromain.png);
     width: 90%;
-    height: 100px;
+    height: 250px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   .house-containers {
     display: flex;
@@ -213,6 +229,7 @@ nav a {
   }
   .mob-ad img {
     width: 100%;
+    
   }
   .a-container button {
     background-color: #FFC33E;

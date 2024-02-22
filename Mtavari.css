@@ -5,7 +5,21 @@
 }
 body {
     min-height: 100vh;
+
 }
+h4 {
+    font-family: "BPG Nino Mtavruli", sans-serif;
+}
+h1 {
+    font-family: "BPG Nino Mtavruli", sans-serif;
+}
+h2 {
+    font-family: "BPG Nino Mtavruli", sans-serif;
+}
+h3 {
+    font-family: "BPG Nino Mtavruli", sans-serif;
+}
+
 /*------------------top----------------------*/
 .top-first {
     background-color: #306587;
@@ -150,14 +164,22 @@ button {
     border: none;
     color: #fff;
 }
-
+h4 {
+    font-family: "BPG Nino Mtavruli", sans-serif;
+}
+h3 {
+    font-family: "BPG Nino Mtavruli", sans-serif;
+}
+h1 {
+    font-family: "BPG Nino Mtavruli", sans-serif;
+}
 /*---------------partniors------------*/
 .partniors {
     max-width: 100%;
     background-color: #f0f0f0;
 }
 .partniors img {
-   width: 100px;
+    width: 100px;
 }
 
 
@@ -170,6 +192,9 @@ button {
     background-image: url(./desktopsearchimg.png);
     width: 90%;
     height: 660px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .des-all-search {
     display: flex;
@@ -203,6 +228,13 @@ button {
 .des-mainImg {
     display: flex;
 }
+label {
+    font-family: "BPG Nino Mtavruli", sans-serif;
+}
+.offer {
+    width: 100% ;
+    display: flex;
+}
 /*------------------desktop patniors------------*/
 .partniors {
     display: flex;
@@ -215,44 +247,44 @@ button {
     overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
-  
-   .card {
-      display: inline-block;
+    
+    .card {
+        display: inline-block;
     }
-  }
-  .scrolling-wrapper {
+}
+.scrolling-wrapper {
     -webkit-overflow-scrolling: touch;
-  }
-  .scrolling-wrapper::-webkit-scrollbar {
+}
+.scrolling-wrapper::-webkit-scrollbar {
     width: 14px;               /* width of the entire scrollbar */
-  }
+}
 
-  /*---------------sm-cards--------------------*/
-  .sm-card img {
+/*---------------sm-cards--------------------*/
+.sm-card img {
     width: 80px !important;
-  }
-  .sm-card p {
+}
+.sm-card p {
     width: 100px !important;
-  }
-  .cards-back {
+}
+.cards-back {
     box-shadow:
     0 0 0 1px #000000,
     0 0 0 1px #000000;
-  }
-  .cards-sectiondesk {
+}
+.cards-sectiondesk {
     display: flex;
-  }
-  .card-rowdesk {
+}
+.card-rowdesk {
     background-color: #fff;
-  }
+}
 
-  /*------------photos-----------------*/
+/*------------photos-----------------*/
 
-  .photos {
+.photos {
     display: flex;
     background-color: #306587
     ;
-  }
+}
 .photos-back img {
     width: 150px !important;
 }
@@ -261,7 +293,7 @@ button {
 .desk-ad {
     display: flex;
     width: 100%;
-  }
+}
   .desk-ad img {
     width: 100%;
   }
